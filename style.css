@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+   
+    
+/* This is formatting for all the HTML files Fonts/Margins etc. */
+}
+.frontpage{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(7, 30, 4, 0.7),rgba(4,9,30,0.7)),url(images/Banner.png)
+    ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/*Formatting for the Home page background and images*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav img {
+    width: 150px;
+    
+}
+.navigation-links{
+    flex: 1;
+    text-align: right;
+}
+.navigation-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navigation-links ul li a{
+    color:#db1010;
+    text-decoration: none;
+    font-size: 13px;
+}
+.navigation-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navigation-links ul li:hover::after{
+    width: 100%;
+}
+/*anything under nav or navigation is css formatting for the navigation links in the website such as the Home Button*/
+.intro-page{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    text-align: center;
+}
+.intro-page h1{
+    font-size: 62px;
+}
+.intro-page p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color:#fff;
+}
+/*Neutral*/
+.rollover-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+}
+/*hover*/
+.rollover-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+/*Anything under rollover button is formatting for the button on the home page this is where the effect are applied to make the animations*/
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .intro-page h1{
+        font-size: 20px;
+    }
+    .navigation-links ul li{
+        display: block;
+    }
+    .navigation-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navigation-links ul{
+        padding: 30px;
+    }
+}
+
+.threats{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.threats-col{
+    flex-basis: 100%;
+    background: #51bcda;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5;
+
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    
+}
+.threats-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+@media(max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
+}
+
+.footer{
+    margin-top: 150px;
+    width: 100%;
+   
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+    text-align: center;
+    flex-grow: 2;
+    
+
+}
+.form2{
+flex-grow: 2;
+}
+
+.footer h4{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.form1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: pointer;
+}
+.s-icons{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/background1.jpg.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+
+
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+
+}
+.red-btn:hover{
+    color: #fff;
+}
+
+
+
+
+
+

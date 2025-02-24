@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Secure Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Inline CSS for quick styling */
+        body {
+            font-family: 'Oswald', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        .nav {
+            background: #007bff; /* Blue background for the navigation */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px; /* Space below the navigation */
+        }
+        .nav a {
+            color: white; /* White text for links */
+            text-decoration: none; /* Remove underline */
+            margin: 0 15px; /* Space between links */
+            font-size: 16px; /* Font size for links */
+        }
+        .nav a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        .quiz-section {
+            background: #e7f3ff; /* Light blue background for better contrast */
+            padding: 30px; /* Increased padding for better spacing */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px; /* Increased max width for better layout */
+            margin: auto; /* Center the quiz section */
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px; /* Increased font size for the title */
+        }
+        label {
+            font-size: 18px; /* Increased font size for labels */
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff; /* Permanent blue background */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px; /* Increase font size for better visibility */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+        button:hover {
+            background-color: white; /* Change to white on hover */
+            color: #007bff; /* Change text color to blue on hover */
+            border: 2px solid #007bff; /* Add border on hover */
+        }
+        #result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px; /* Increased font size for result */
+        }
+        .home-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #007bff; /* Blue color for the link */
+            text-decoration: none; /* Remove underline */
+        }
+        .home-link:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="Threats.html">Threats</a>
+        <a href="Malware.html">Prevention and Procedures</a>
+        <a href="Cases.html">Cases</a>
+        <a href="news.html">Live News</a>
+    </div>
+    <section class="quiz-section">
+        <h1>Cybersecurity Quiz</h1>
+        <form id="quizForm">
+           
+        </form>
+        <div id="result"></div>
+        <a href="index.html" class="home-link" id="homeLink" style="display: none;">Return to Home Page</a>
+    </section>
+    <script src="quiz.js"></script>
+</body>
+</html>

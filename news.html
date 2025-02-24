@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Cybersecurity News</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Inline CSS for quick styling */
+        body {
+            font-family: 'Oswald', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        .nav {
+            background: #007bff; /* Blue background for the navigation */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px; /* Space below the navigation */
+        }
+        .nav a {
+            color: white; /* White text for links */
+            text-decoration: none; /* Remove underline */
+            margin: 0 15px; /* Space between links */
+            font-size: 16px; /* Font size for links */
+        }
+        .nav a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        .news-section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px; /* Set a max width for better layout */
+            margin: auto; /* Center the news section */
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px; /* Increased font size for the title */
+        }
+        .news-article {
+            display: flex;
+            margin-bottom: 20px; /* Space between articles */
+            border-bottom: 1px solid #ddd; /* Divider between articles */
+            padding-bottom: 20px; /* Padding for articles */
+        }
+        .news-article img {
+            width: 150px; /* Fixed width for images */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Rounded corners for images */
+            margin-right: 20px; /* Space between image and text */
+        }
+        .news-content {
+            flex: 1; /* Allow content to take remaining space */
+        }
+        .news-content h3 {
+            margin: 0; /* Remove default margin */
+            font-size: 20px; /* Font size for article titles */
+        }
+        .news-content p {
+            margin: 5px 0; /* Space between paragraphs */
+            font-size: 16px; /* Font size for article descriptions */
+        }
+        .news-content a {
+            color: #007bff; /* Link color */
+            text-decoration: none; /* Remove underline */
+        }
+        .news-content a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="Threats.html">Threats</a>
+        <a href="Malware.html">Prevention and Procedures</a>
+        <a href="Cases.html">Cases</a>
+        <a href="quiz.html">Quiz</a>
+    </div>
+    <section class="news-section">
+        <h1>Live Cybersecurity News</h1>
+        <div id="newsFeed"></div>
+    </section>
+    <script src="news.js"></script>
+</body>
+</html>
