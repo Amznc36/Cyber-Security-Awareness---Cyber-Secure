@@ -1,4 +1,4 @@
-const apiKey = '0dec92d5f1524d669c33ef6805889683'; // Replace with your NewsAPI key
+const apiKey = ''; // Replace with your NewsAPI key
 const url = `https://newsapi.org/v2/everything?q=cybersecurity&apiKey=${apiKey}`;
 
 fetch(url)
